@@ -1,8 +1,11 @@
 // -----------------------------------------------------------------------------
 // This file contains typography styles.
 // -----------------------------------------------------------------------------
+$fontMain: 'DM Sans', sans-serif;
+$fontAccent: 'Titan One', cursive;
+
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: $fontMain;
 }
 
 h1,
@@ -11,5 +14,5 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Titan One', cursive;
+  font-family: $fontAccent;
 }

@@ -1,3 +1,24 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
+:root {
+    --color-prime:#FFFFFF;
+    --bg-color-mobile-menu:#E17992;
+    --bg-color-nav-mobile-menu:#E18298;
+    --bg-color-hero: #FFB8CA;
+    --bg-btn:#D41342;
+    --bg-accent-btn:#ECEBEB;
+    --text-color-prime:#000000;
+    --text-color-secondary:#907E82;;
+    --accent-text-color:#D41443;
+    --subtitle-color:#FFA5BA;
+    --fill-customer:#E1E1E1;
+    --bg-customer:#FAFAFA;
+    --bg-products-second: #F0D1A5;
+    --bg-products-third: #C2E297;
+    --bg-about-footer: #FFF5F6;
+    --fill-icon-socials:#FEA5BB;
+    --fill-icon-circle:#D9D9D9;
+    --fill-icon-accent-circle:#C7133E;
+    --fill-icon-accent-home:#D31342;
+}

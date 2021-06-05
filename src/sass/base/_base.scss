@@ -1,6 +1,16 @@
 // -----------------------------------------------------------------------------
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  outline: 1px solid palevioletred;
+}
+
 img {
   display: block;
   max-width: 100%;

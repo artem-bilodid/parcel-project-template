@@ -1,6 +1,10 @@
 .gallery {
   margin: 0 auto;
-  background-image: linear-gradient(to bottom, #fff5f6 39.7%, #ffffff 39.7%);
+  background-image: linear-gradient(
+    to bottom,
+    var(--bg-about-footer) 39.7%,
+    var(--bg-secondary) 39.7%
+  );
 }
 
 .gallery__image {

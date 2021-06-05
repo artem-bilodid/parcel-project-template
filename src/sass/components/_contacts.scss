@@ -1,0 +1,160 @@
+.contacts {
+    padding: 20px 50px 20px 50px;
+    background: #FFF5F6;
+    padding-bottom: 113px;
+
+    &__list {
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+        
+        }
+
+    
+    &__item {
+        padding: 43px 20px 43px 20px;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+        margin: 0;
+    }
+
+    &__item:not(:last-child){
+        margin-bottom: 20px;
+    }
+
+    &__kategoriay{
+        font-family: DM Sans;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.04em;
+        background: #F0D1A5;
+        border-radius: 4px;
+        width: 80px;
+        height: 16px;
+        margin: 0 0 25px 0;
+        }
+
+    &__kategoriay-foodtruck{
+        @extend .contacts__kategoriay;
+        background: #C2E297;
+        width:130px;
+                    }
+
+        &__title{
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.86;
+            letter-spacing: 0.04em;
+            color: #000000;
+            margin: 0 0 10px 0;
+        }
+
+        &__city{
+            padding-bottom: 25px;
+            border-bottom: 1px solid #E1E1E1;
+            margin: 0 0 25px 0;
+        }
+
+        &__title-city{
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.5;
+            color: #907E82;
+            margin: 0;
+        }
+
+
+        &__work-schedule{
+
+            @extend .contacts__list ;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #E1E1E1;
+            margin-bottom: 25px;
+        }
+
+
+        &__work-schedule-item:not(:last-child){
+            margin-bottom: 10px;
+        }
+
+        &__work-schedule-title{
+            @extend .contacts__title ;
+            margin-bottom: 0;
+
+
+
+        }
+
+        &__work-schedule-text {
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.86;
+            color: #FFA5BA;
+            margin: 0;
+      }
+
+&__connection-list{
+@extend .contacts__list ;
+
+}
+
+&__link{
+    text-decoration: none;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #907E82;
+    margin: 0;
+}
+
+&__btn {
+    margin-right: auto;
+    margin-left: auto;
+
+
+
+}
+
+&__btn-Locations{
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.31;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background: #D41342;
+    border-radius: 22px;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 10px;
+height: 44px;
+padding: 0 17px 0 17px;
+border: none
+}
+
+&__btn-Franchise{
+    @extend .contacts__btn-Locations ;
+    padding: 0 34px 0 34px;
+    color: #D41443;
+    background: #FFFFFF;
+}
+
+
+}
+
+.list{margin-bottom: 54px;}

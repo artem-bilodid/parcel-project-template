@@ -80,10 +80,12 @@
   }
   
   .advantages__counter::before {
-    content: "";
-    vertical-align: top;
-    background-image: url(../../images/);
-
-    
-    
+      display: flex;
+    content: " ";
+    top: 20px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background-image: url(../../src/images/advantages/desktop/advantages-desktop-icon1@1x.png);
+    background-repeat: no-repeat;
   }

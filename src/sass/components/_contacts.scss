@@ -1,133 +1,221 @@
 .contacts {
-    padding: 20px 50px 20px 50px;
-    background: #FFF5F6;
-    padding-bottom: 113px;
+  padding: 0 50px 113px 50px;
 
-    &__list {
-        margin: 0;
-        padding-left: 0;
-        list-style: none;
-        
-        }
-
+   @media screen and (max-width:767.98px) {
+     background: linear-gradient(to top, var(--bg-about-footer) 95%, var(--color-prime) 5%);
+   }
     
-    &__item {
-        padding: 43px 20px 43px 20px;
-        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-        border-radius: 24px;
-        margin: 0;
+  @media screen and (min-width:768px) {
+     background:linear-gradient(to top, var(--bg-about-footer) 89%, var(--color-prime) 11%);
+  }
+       
+  @media screen and (min-width:768px) {
+    padding: 0 36px 165px 36px;}
+
+     @media screen and (min-width:1280px) {
+       padding: 0 115px 165px 115px;
+       width: 1280px;
+       margin-left: auto;
+       margin-right: auto;
+       background-image:linear-gradient(to top, rgba(255, 245, 246, 0.7) 99%, rgba(255, 255, 255, 0.3) 1%),
+       url('../images/contacts/point.png');
+       background-position-y: 102px;
+       background-size: contain;
+       background-repeat: no-repeat;       
+     }
+
+  &__list {
+     margin-bottom: 54px;
+    @extend .list;
+
+    @media screen and (min-width:480px) and (max-width:767.98px) {
+      max-width: 380px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 81px;
     }
 
-    &__item:not(:last-child){
-        margin-bottom: 20px;
+    @media screen and (min-width:768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -20px;
+      margin-top: -20px;
+      margin-bottom: 86px;
     }
+  }
 
-    &__kategoriay{
-        font-family: DM Sans;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 1.86;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        letter-spacing: 0.04em;
-        background: #F0D1A5;
-        border-radius: 4px;
-        width: 80px;
-        height: 16px;
-        margin: 0 0 25px 0;
-        }
+  &__item {
+    padding: 43px 20px 43px 20px;
+    background: var(--color-prime);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    margin: 0;
 
-    &__kategoriay-foodtruck{
-        @extend .contacts__kategoriay;
-        background: #C2E297;
-        width:130px;
-                    }
-
-        &__title{
-            font-family: DM Sans;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.86;
-            letter-spacing: 0.04em;
-            color: #000000;
-            margin: 0 0 10px 0;
-        }
-
-        &__city{
-            padding-bottom: 25px;
-            border-bottom: 1px solid #E1E1E1;
-            margin: 0 0 25px 0;
-        }
-
-        &__title-city{
-            font-family: DM Sans;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 1.5;
-            color: #907E82;
-            margin: 0;
-        }
-
-
-        &__work-schedule{
-
-            @extend .contacts__list ;
-            padding-bottom: 25px;
-            border-bottom: 1px solid #E1E1E1;
-            margin-bottom: 25px;
-        }
-
-
-        &__work-schedule-item:not(:last-child){
-            margin-bottom: 10px;
-        }
-
-        &__work-schedule-title{
-            @extend .contacts__title ;
-            margin-bottom: 0;
-
-
-
-        }
-
-        &__work-schedule-text {
-            font-family: DM Sans;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 1.86;
-            color: #FFA5BA;
-            margin: 0;
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 3 * 20px) / 3);
+      margin-left: 20px;
+      margin-top: 20px;
+      padding: 50px 31px 50px 31px;
+    }
+      @media screen and (min-width: 1280px) {
+        padding: 51px 43px 62px 43px;
+        max-width: 330px;
       }
+  }
 
-&__connection-list{
-@extend .contacts__list ;
+  &__item:not(:last-child) {
+    @media screen and (max-width: 767.98px) {
+      margin-bottom: 20px;
+    }
+  }
 
-}
+  &__kategoriay {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.04em;
+    background: var(--bg-products-second);
+    border-radius: 4px;
+    width: 80px;
+    height: 16px;
+    margin: 0 0 25px 0;
+    @media screen and (min-width: 768px){
+        font-size: 16px;
+        width: 73px;
+        height: 28px;
+        margin-bottom: 30px;
+    }
+     @media screen and (min-width: 1280px) {
+             margin-bottom: 32px;
+     }
+  }
 
-&__link{
+  &__kategoriay-foodtruck {
+    @extend .contacts__kategoriay;
+    background: var(--bg-products-third);
+    width: 130px;
+    @media screen and (min-width: 768px) {
+            width: 138px;}
+  }
+
+  &__title {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: var(text-color-prime);
+    margin: 0 0 10px 0;
+    @media screen and (min-width: 768px) and (max-width: 1279.8px) {
+      font-size: 14px;
+    margin-bottom: 14px;}
+      @media screen and (min-width: 1280px) {
+        font-size: 16px;}
+  }
+
+  &__city {
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--fill-customer);
+    margin: 0 0 25px 0;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-bottom: 32px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__text-city {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--text-color-secondary);
+    margin: 0;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.66;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.83;
+      letter-spacing: 0.04em;
+    }
+  }
+
+  &__work-schedule {
+
+    @extend .list ;
+    @extend .contacts__city ;
+  }
+
+  &__work-schedule-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &__work-schedule-title {
+    @extend .contacts__title;
+    margin-bottom: 0;
+  }
+
+  &__work-schedule-text {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    color: var(--subtitle-color);
+    margin: 0;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;}
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;}
+  }
+
+  &__connection-list {
+    @extend .list;
+  }
+
+  &__link {
     text-decoration: none;
     font-family: DM Sans;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.5;
-    color: #907E82;
+    color: var(--text-color-secondary);
     margin: 0;
-}
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.83;
+    }
 
-&__btn {
-    margin-right: auto;
-    margin-left: auto;
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.83;
+    }
+  }
 
+  &__btn {
 
+    @media screen and (min-width:768px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
 
-}
-
-&__btn-Locations{
+  &__btn-Locations {
     font-family: DM Sans;
     font-style: normal;
     font-weight: bold;
@@ -136,25 +224,48 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: #FFFFFF;
-    background: #D41342;
+    color: var(--color-prime);
+    background: var(--bg-btn);
     border-radius: 22px;
-margin-right: auto;
-margin-left: auto;
-margin-bottom: 10px;
-height: 44px;
-padding: 0 17px 0 17px;
-border: none
-}
+    height: 44px;
+    padding: 0 17px 0 17px;
+    border: none;
 
-&__btn-Franchise{
-    @extend .contacts__btn-Locations ;
+    @media screen and (max-width:767.98px) {
+      margin-right: auto;
+      margin-left: auto;
+      }
+  }
+  &__btn-Locations:not(:last-child){
+      @media screen and (max-width:767.98px) {
+          margin-bottom: 10px;
+      }
+      @media screen and (min-width:767.98px){
+          margin-right: 15px;
+      }
+  }
+
+  &__btn-Franchise {
+    @extend .contacts__btn-Locations;
     padding: 0 34px 0 34px;
-    color: #D41443;
-    background: #FFFFFF;
+    color: var(--accent-text-color);
+    background: var(--color-prime);
+  }
 }
 
-
+.list {
+  padding-left: 0;
+  list-style: none;
 }
 
-.list{margin-bottom: 54px;}
+.icon-Locations {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: var(--color-prime);
+}
+
+.icon-Franchise {
+  @extend .icon-Locations;
+  fill: var(--accent-text-color);
+}

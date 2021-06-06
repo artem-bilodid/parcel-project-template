@@ -1,8 +1,9 @@
 .advantages {
-    outline: 1px solid palevioletred;
     max-width: 480px;
     margin: 0 auto 97px;
+
     background-color: var(--color-prime);
+    
     @media screen and (min-width: 768px) {
     max-width: 768px;
     margin-bottom: 140px;
@@ -183,7 +184,7 @@
     color: var(--accent-text-color);
 
     text-transform: uppercase;
-    
+
     @media screen and (min-width: 768px) {
         margin-top: 36px;
 

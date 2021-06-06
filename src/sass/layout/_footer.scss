@@ -1,3 +1,90 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+.footer {
+  background-color: var(--bg-about-footer);
+
+  .footer__main-container {
+    padding: 25px 20px;
+  }
+
+  // Footer Headings
+
+  .footer__heading-one {
+    margin-bottom: 17px;
+    font-family: $fontAccent;
+    font-size: 18px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--subtitle-color);
+  }
+
+  .footer__heading-two {
+    margin-bottom: 43px;
+    font-family: $fontAccent;
+    font-size: 34px;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent-text-color);
+  }
+}
+
+// Social icons
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 45px;
+
+  .social-icons_item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.social-icons__svg {
+  fill: var(--color-prime);
+}
+
+.social-icons__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--fill-icon-socials);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+  }
+}
+
+// Contact number
+
+.footer-phone {
+  margin-bottom: 23px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.8;
+  text-align: right;
+  color: var(--text-color-prime);
+
+  .footer-phone__number {
+    color: var(--accent-text-color);
+  }
+}
+
+// Footer copyright
+
+.footer__copyright {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  border-top: 1px solid var(--fill-customer);
+  color: var(--text-color-secondary);
+}

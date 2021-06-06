@@ -44,8 +44,8 @@
     font-family: DM Sans;
     font-style: 400;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 1.76;
+    font-size: 12px;
+    line-height: 1.7;
     letter-spacing: 0.02em;
     color: #000000;
 
@@ -99,6 +99,11 @@
     margin-left: 60px;
     margin-bottom: 0;
     width: calc((100% - 3 * 60px) / 3);  
+
+    font-size: 14px;
+    line-height: 1.74;
+    
+
     &:nth-child(1)::before {
         background-image: url(../../src/images/advantages/tablet/advantages-tablet-icon1@1x.png);
     
@@ -134,6 +139,9 @@
     margin-left: 60px;   
 
     width: calc((100% - 3 * 30px) / 3);  
+    
+    font-size: 16px;
+    line-height: 1.76;
     
     &:nth-child(1)::before {
         background-image: url(../../src/images/advantages/desktop/advantages-desktop-icon1@1x.png);
@@ -175,6 +183,19 @@
     color: var(--accent-text-color);
 
     text-transform: uppercase;
+    
+    @media screen and (min-width: 768px) {
+        margin-top: 36px;
+
+        font-size: 48px;
+        line-height: 1.145;  
+    }
+    @media screen and (min-width: 1200px) {
+        margin-top: 40px;
+
+        font-size: 58px;
+        line-height: 1.137;
+    }
   }
   .advantages__text {
     margin: 0;

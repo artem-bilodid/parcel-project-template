@@ -1,5 +1,10 @@
 .contacts {
+  &__style-list {
+    padding-left: 0;
+    list-style: none;
+  }
   padding: 0 50px 113px 50px;
+  
 
    @media screen and (max-width:767.98px) {
      background: linear-gradient(to top, var(--bg-about-footer) 95%, var(--color-prime) 5%);
@@ -14,7 +19,7 @@
 
      @media screen and (min-width:1280px) {
        padding: 0 115px 165px 115px;
-       width: 1280px;
+      //  width: 1280px;
        margin-left: auto;
        margin-right: auto;
        background-image:linear-gradient(to top, rgba(255, 245, 246, 0.7) 99%, rgba(255, 255, 255, 0.3) 1%),
@@ -24,15 +29,35 @@
        background-repeat: no-repeat;       
      }
 
-  &__list {
-     margin-bottom: 54px;
-    @extend .list;
+     @media (min-width: 1280px) and (min-device-pixel-ratio: 2),
+     (min-width: 1280px) and (min-resolution: 192dpi),
+     (min-width: 1280px) and (min-resolution: 2dppx) 
+       {background-image:linear-gradient(to top, rgba(255, 245, 246, 0.7) 99%, rgba(255, 255, 255, 0.3) 1%),
+         url('../images/contacts/spot-2x.png');
+        }
+     &__container {
+       max-width: 320px;
+       margin-left: auto;
+       margin-right: auto;
+       @media screen and (min-width:480px) {
+         max-width: 480px;}
 
-    @media screen and (min-width:480px) and (max-width:767.98px) {
-      max-width: 380px;
+         @media screen and (min-width:768px) {
+           max-width: 768px;
+         }
+@media screen and (min-width:1280px) {
+  max-width: 1280px;
+}
+
+
+     }
+  &__list {
+     @extend .contacts__style-list;
+     margin-bottom: 54px;
+    
+    @media screen and (min-width:480px){
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 81px;
     }
 
     @media screen and (min-width:768px) {
@@ -40,8 +65,12 @@
       flex-wrap: wrap;
       margin-left: -20px;
       margin-top: -20px;
-      margin-bottom: 86px;
+      margin-bottom: 81px;
     }
+    @media screen and (min-width:1280px) {
+    justify-content: center;
+    margin-bottom: 86px;
+  }
   }
 
   &__item {
@@ -155,7 +184,7 @@
 
   &__work-schedule {
 
-    @extend .list ;
+    @extend .contacts__style-list;
     @extend .contacts__city ;
   }
 
@@ -184,7 +213,7 @@
   }
 
   &__connection-list {
-    @extend .list;
+    @extend .contacts__style-list;
   }
 
   &__link {
@@ -236,6 +265,14 @@
       margin-right: auto;
       margin-left: auto;
       }
+
+      @media screen and (min-width:768px) {
+        padding: 0 34px 0 34px;
+      }
+
+       @media screen and (min-width:1280px) {
+         padding: 0 35px 0 35px;
+       }
   }
 
   &__btn-Locations:not(:last-child){
@@ -252,6 +289,14 @@
     padding: 0 34px 0 34px;
     color: var(--accent-text-color);
     background: var(--color-prime);
+
+    @media screen and (min-width:768px) {
+      padding: 0 38px 0 38px;
+    }
+
+    @media screen and (min-width:1280px) {
+      padding: 0 39px 0 39px;
+    }
   }
 
   &__btn-Franchise:hover {
@@ -259,19 +304,21 @@
   }
 }
 
-.list {
-  padding-left: 0;
-  list-style: none;
-}
 
 .icon-Locations {
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  fill: var(--color-prime);
+    fill: none;
+    stroke: var(--color-prime);
+    width: 5px;
+    height: 8px;
+    stroke: 2px;
+    margin-left: 8px;
+    @media screen and (min-width:768px) {
+      margin-left: 14px;
+    }
 }
 
 .icon-Franchise {
   @extend .icon-Locations;
-  fill: var(--accent-text-color);
+  stroke: var(--accent-text-color);
+  margin-left: 14px;
 }

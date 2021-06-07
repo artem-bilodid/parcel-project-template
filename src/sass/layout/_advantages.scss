@@ -1,19 +1,24 @@
 .advantages {
-    max-width: 480px;
-    margin: 0 auto 97px;
-
-    background-color: var(--color-prime);
-    
-    @media screen and (min-width: 768px) {
-    max-width: 768px;
-    margin-bottom: 140px;
-    }
-    @media screen and (min-width: 1200px) {
-    max-width: 1200px;  
-    margin-bottom: 139px;
-    }
-
+    background-color: var(--bg-about-footer);
 }
+.advantages__container{
+    margin: 0 auto;
+    padding-bottom: 97px;
+
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+        }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        pading-bottom: 140px;
+        }
+        @media screen and (min-width: 1280px) {
+        width: 1280px;  
+        }
+}
+
 .list {
     margin: 0;
 }
@@ -34,7 +39,7 @@
     margin-left: -60px;
     margin-right: 0;
    }
-   @media screen and (min-width: 1200px) {
+   @media screen and (min-width: 1280px) {
     margin-left: -30px;  
    }
 }
@@ -42,13 +47,13 @@
 .advantages__item {
     max-width: 230px;
     margin-bottom: 38px;
-    font-family: DM Sans;
-    font-style: 400;
+
+    font-style:normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 1.7;
     letter-spacing: 0.02em;
-    color: #000000;
+    color: var(--text-color-prime);
 
     &:last-child{
     margin-bottom: 0;
@@ -66,116 +71,63 @@
     }
 
     &:nth-child(1)::before {
-        background-image: url(../../src/images/advantages/mobile/advantages-mobile-icon1@1x.png);
+        background-image: url(../../src/images/advantages/advantages-icon1@1x.png);
     
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-        background-image: url(../../src/images/advantages/mobile/advantages-mobile-icon1@2x.png);
+        background-image: url(../../src/images/advantages/advantages-icon1@2x.png);
     }
     }
     &:nth-child(2)::before {
-        background-image: url(../../src/images/advantages/mobile/advantages-mobile-icon2@1x.png);
+        background-image: url(../../src/images/advantages/advantages-icon2@1x.png);
 
         @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-        background-image: url(../../src/images/advantages/mobile/advantages-mobile-icon2@2x.png);
+        background-image: url(../../src/images/advantages/advantages-icon2@2x.png);
     }
     }
     &:nth-child(3)::before {
-        background-image: url(../../src/images/advantages/mobile/advantages-mobile-icon3@1x.png);
+        background-image: url(../../src/images/advantages/advantages-icon3@1x.png);
         @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-        background-image: url(../../src/images/advantages/mobile/advantages-mobile-icon3@2x.png);
+        background-image: url(../../src/images/advantages/advantages-icon3@2x.png);
     }
     }
 
-    @media screen and (min-width: 768px) and  (max-width: 1199.99px){
+    @media screen and (min-width: 768px) and  (max-width: 1279.99px){
     display: flex;
     flex-direction: column;
 
-    
-    margin-left: 60px;
     margin-bottom: 0;
+    margin-left: 60px;
     width: calc((100% - 3 * 60px) / 3);  
 
     font-size: 14px;
     line-height: 1.74;
-    
-
-    &:nth-child(1)::before {
-        background-image: url(../../src/images/advantages/tablet/advantages-tablet-icon1@1x.png);
-    
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-        background-image: url(../../src/images/advantages/tablet/advantages-tablet-icon1@2x.png);
-    }
-    }
-    &:nth-child(2)::before {
-        background-image: url(../../src/images/advantages/tablet/advantages-tablet-icon2@1x.png);
-
-        @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-        background-image: url(../../src/images/advantages/tablet/advantages-tablet-icon2@2x.png);
-    }
-    }
-    &:nth-child(3)::before {
-        background-image: url(../../src/images/advantages/tablet/advantages-tablet-icon3@1x.png);
-        @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-        background-image: url(../../src/images/advantages/tablet/advantages-tablet-icon3@2x.png);
-    }
-    }
 }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
     display: flex;
     flex-direction: column;
 
     margin-bottom: 0;
-    margin-left: 60px;   
+    margin-left: 30px;   
 
     width: calc((100% - 3 * 30px) / 3);  
     
     font-size: 16px;
     line-height: 1.76;
+    }
+    }
     
-    &:nth-child(1)::before {
-        background-image: url(../../src/images/advantages/desktop/advantages-desktop-icon1@1x.png);
-    
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-        background-image: url(../../src/images/advantages/desktop/advantages-desktop-icon1@2x.png);
-    }
-    }
-    &:nth-child(2)::before {
-        background-image: url(../../src/images/advantages/desktop/advantages-desktop-icon2@1x.png);
-
-        @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-        background-image: url(../../src/images/advantages/desktop/advantages-desktop-icon2@2x.png);
-    }
-    }
-    &:nth-child(3)::before {
-        background-image: url(../../src/images/advantages/desktop/advantages-desktop-icon3@1x.png);
-        @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-        background-image: url(../../src/images/advantages/desktop/advantages-desktop-icon3@2x.png);
-    }
-    }
-    }
-    }
 .advantages__counter {
+
     margin-top: 16px;
     margin-bottom: 0;
-    font-family: Titan One;
+
+    font-family: $fontAccent;
     font-style: 400;
     font-weight: 400;
     font-size: 36px;
@@ -187,13 +139,11 @@
 
     @media screen and (min-width: 768px) {
         margin-top: 36px;
-
         font-size: 48px;
         line-height: 1.145;  
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         margin-top: 40px;
-
         font-size: 58px;
         line-height: 1.137;
     }

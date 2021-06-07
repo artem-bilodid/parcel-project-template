@@ -17,11 +17,14 @@
 // 4. Layout-related sections
 @import 'layout/hero-header';
 @import 'layout/products';
+@import 'layout/advantages';
 @import 'layout/gallery';
 @import 'layout/footer';
+@import 'layout/contacts';
 
 // 5. Components
 @import 'components/button';
+
 
 // 6. Page-specific styles
 @import 'pages/home';

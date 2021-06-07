@@ -8,9 +8,22 @@
     padding-left: 20px;
     padding-right: 20px;
 
+    @media (min-width: $mobile) {
+      width: $mobile;
+    }
+
     @media (min-width: $tablet) {
       display: flex;
       justify-content: space-between;
+      width: $tablet;
+      padding-left: 36px;
+      padding-right: 36px;
+    }
+
+    @media (min-width: $desktop) {
+      width: $desktop;
+      padding-left: 114px;
+      padding-right: 114px;
     }
   }
 
@@ -80,10 +93,13 @@
 
 // Social icons
 
-.social-icons {
+.social-icons__list {
   display: flex;
   justify-content: flex-end;
+  margin: 0;
+  padding: 0;
   margin-bottom: 45px;
+  list-style: none;
 
   .social-icons_item:not(:last-child) {
     margin-right: 30px;
@@ -107,6 +123,8 @@
   border-radius: 50%;
   background-color: var(--fill-icon-socials);
 
+  transition: background-color 250ms $timing-function;
+
   @media (min-width: $tablet) {
     width: 34px;
     height: 34px;
@@ -128,6 +146,10 @@
   text-align: right;
   color: var(--text-color-prime);
 
+  .footer-phone__link {
+    text-decoration: none;
+  }
+
   @media (min-width: $tablet) {
     font-size: 14px;
     letter-spacing: 0.02em;
@@ -147,7 +169,7 @@
 .footer__copyright {
   //   display: flex;
   flex-direction: column;
-  padding-top: 25px;
+  padding-top: 22px;
   padding-bottom: 25px;
   text-align: center;
   font-weight: 700;
@@ -155,6 +177,17 @@
   line-height: 1.5;
   border-top: 1px solid var(--fill-customer);
   color: var(--text-color-secondary);
+
+  @media (min-width: $tablet) {
+    padding-top: 29px;
+    padding-bottom: 18px;
+    line-height: 1.86;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 9px;
+    padding-bottom: 10px;
+  }
 
   .footer__copyright-text {
     display: block;

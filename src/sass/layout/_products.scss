@@ -58,7 +58,7 @@
 
 .products__title {
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 144px;
     font-family: $fontAccent;
     font-weight: 500;
     font-size: 34px;
@@ -70,23 +70,22 @@
 
     @media screen and (min-width: 768px) {
         font-size: 48px;
+        margin-bottom: 150px;
     }
 
     @media screen and (min-width: 1280px) {
         font-size: 58px;
         line-height: 1.14;
         letter-spacing: 0.06em;
+        margin-bottom: 259px;
     }
 
 }
 
-ul {
+.products__list {
     padding: 0;
     margin: 0;
     list-style: none;
-}
-
-.products__list {
     display: flex;
     flex-direction: column;
     margin-left: calc(-1 * 30px);
@@ -99,16 +98,18 @@ ul {
 }
 
 .products__item {
+    position: relative;
     margin-left: 30px;
-    margin-top: 30px;
+    margin-top: 130px;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 40px;
+    padding-top: 161px;
     // box-shadow: -1px 12px 27px -5px rgba(12,12,12,0.58);
     //     -webkit-box-shadow: -1px 12px 27px -5px rgba(12,12,12,0.58),
     //     -moz-box-shadow: -1px 12px 27px -5px rgba(12,12,12,0.58);   
     border-radius: 24px;
-    flex-basis: calc((100% - 1 * 30px) / 1);
+    flex-basis: calc((100% - 1 * 130px) / 1);
     background-color: var(--bg-color-hero);   
     text-align: center; 
 
@@ -122,12 +123,15 @@ ul {
     @media screen and (min-width: 768px) {
         padding-left: 11px;
         padding-right: 11px;
+        padding-top: 152px;
+        margin-top: 30px;
         flex-basis: calc((100% - 3 * 30px) / 3);
     }
     @media screen and (min-width: 1280px) {
         padding-left: 44px;
         padding-right: 44px;
         padding-bottom: 50px;
+        padding-top: 163px;
     }
 }
 
@@ -153,61 +157,226 @@ ul {
         font-size: 30px;
         line-height: 1.13;
     }
+}
 
-    &:nth-child(2)::before {
-        content: '';
+.products__card-title--icecream::before {
+    position: absolute;
+    top: -113px;
+    left: 7.14%;
+    content: '';
+    display: block;
+    width: 249px;
+    height: 252px;
+    background-image: url("../images/products/mobile/icecream1-480.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        & {
+        background-image: url("../images/products/mobile/icecream1@2x-480.png");
+        top: -113px;
+        left: 7.14%;
         width: 249px;
         height: 252px;
-        background-image: url("../images/products/mobile/icecream2-480.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-
-        @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-            & {
-            background-image: url("../images/products/mobile/icecream2@2x-480.png");
-            width: 249px;
-            height: 252px;
-            }
-        }
-
-        @media (min-width: 768px) {
-        & {
-            background-image: url("../images/products/tablet/icecream2-768.png");
-            width: 220px;
-            height: 233px;
-        }
-
-        @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-            & {
-            background-image: url("../images/products/tablet/icecream2@2x-768.png");
-            width: 220px;
-            height: 233px;
-            }
         }
     }
-        @media (min-width: 1280px) {
-        & {
-            background-image: url("../images/products/desktop/icecream2-1280.png");
-            max-width: 335px;
-            height: 335px;
-        }
 
-        @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-            & {
-            background-image: url("../images/products/desktop/icecream2@2x-1280.png");
-            max-width: 335px;
-            height: 335px;
-            }
+    @media (min-width: 768px) {
+    & {
+        background-image: url("../images/products/tablet/icecream1-768.png");
+        top: -111px;
+        left: 4px;
+        width: 220px;
+        height: 233px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        & {
+        background-image: url("../images/products/tablet/icecream1@2x-768.png");
+        top: -111px;
+        left: 4px;
+        width: 220px;
+        height: 233px;
         }
-        }
+    }
 }
+    @media (min-width: 1280px) {
+    & {
+        background-image: url("../images/products/desktop/icecream1-1280.png");
+        top: -210px;
+        left: 90px;
+        max-width: 335px;
+        height: 335px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        & {
+        background-image: url("../images/products/desktop/icecream1@2x-1280.png");
+        top: -210px;
+        left: 90px;
+        max-width: 335px;
+        height: 335px;
+        }
+    }
+    }
+}
+
+.products__card-title--icecoffee::before {
+    position: absolute;
+    top: -113px;
+    left: 7.14%;
+    content: '';
+    display: block;
+    width: 249px;
+    height: 252px;
+    background-image: url("../images/products/mobile/icecream2-480.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        & {
+        background-image: url("../images/products/mobile/icecream2@2x-480.png");
+        top: -113px;
+        left: 7.14%;
+        width: 249px;
+        height: 252px;
+        }
+    }
+
+    @media (min-width: 768px) {
+    & {
+        background-image: url("../images/products/tablet/icecream2-768.png");
+        top: -111px;
+        left: 4px;
+        width: 220px;
+        height: 233px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        & {
+        background-image: url("../images/products/tablet/icecream2@2x-768.png");
+        top: -111px;
+        left: 4px;
+        width: 220px;
+        height: 233px;
+        }
+    }
+}
+    @media (min-width: 1280px) {
+    & {
+        background-image: url("../images/products/desktop/icecream2-1280.png");
+        top: -210px;
+        left: 90px;
+        max-width: 335px;
+        height: 335px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        & {
+        background-image: url("../images/products/desktop/icecream2@2x-1280.png");
+        top: -210px;
+        left: 90px;
+        max-width: 335px;
+        height: 335px;
+        }
+    }
+    }
+}
+
+.products__card-title--milkshakes::before {
+    position: absolute;
+    top: -113px;
+    left: 7.14%;
+    content: '';
+    display: block;
+    width: 249px;
+    height: 252px;
+    background-image: url("../images/products/mobile/icecream3-480.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        & {
+        background-image: url("../images/products/mobile/icecream3@2x-480.png");
+        top: -113px;
+        left: 7.14%;
+        width: 249px;
+        height: 252px;
+        }
+    }
+
+    @media (min-width: 768px) {
+    & {
+        background-image: url("../images/products/tablet/icecream3-768.png");
+        top: -111px;
+        left: 4px;
+        width: 220px;
+        height: 233px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        & {
+        background-image: url("../images/products/tablet/icecream3@2x-768.png");
+        top: -111px;
+        left: 4px;
+        width: 220px;
+        height: 233px;
+        }
+    }
+}
+    @media (min-width: 1280px) {
+    & {
+        background-image: url("../images/products/desktop/icecream3-1280.png");
+        top: -210px;
+        left: 90px;
+        max-width: 335px;
+        height: 335px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        & {
+        background-image: url("../images/products/desktop/icecream3@2x-1280.png");
+        top: -210px;
+        left: 90px;
+        max-width: 335px;
+        height: 335px;
+        }
+    }
+    }
+}
+
+.products__card-title--icecream::after {
+    content: '';
+    display: block;
+    width: 26px;
+    height: 6px;
+    stroke: var(--color-prime);
+    fill: var(--color-prime);
+    background-image: url("../icons/sprite.svg#icon-group-ellipses");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .products__card-dividing {

@@ -43,7 +43,7 @@
 .advantages__item {
   display: flex;
   flex-direction: column;
-  flex-basis: 230px;
+  width: 230px;
 
   font-weight: 700;
   font-size: 12px;
@@ -106,7 +106,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin-left: 60px;
-    flex-basis: 180px;
+    width: 180px;
 
     font-size: 14px;
     line-height: 1.74;
@@ -114,7 +114,7 @@
   @media screen and (min-width: 1280px) {
     margin-bottom: 0;
     margin-left: 30px;
-    flex-basis: 330px;
+    width: 330px;
 
     font-size: 16px;
     line-height: 1.76;

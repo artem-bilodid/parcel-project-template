@@ -1,6 +1,11 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.buy-mobile-menu{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
 .button{
     position: absolute;
     width: 80.72px;
@@ -22,13 +27,14 @@
     height: 44px;
     background: #FFFFFF;
     border-radius: 22px;
-
+    border: 0px;
 }
 .buy-now{
-    
+    padding-right: 21px;
 }
 .right-arrow{
-    fill: #D41443;
+    fill: none;
+    stroke: #d41443;
     width: 4.68px;
     height: 8px;
     stroke: 2px;
@@ -37,4 +43,7 @@
 .close{
     width: 14px;
     height: 14px;
+    margin-right: 34px;
+    margin-top: 23px;
+    margin-left: 206px;
 }

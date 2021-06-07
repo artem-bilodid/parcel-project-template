@@ -13,3 +13,25 @@ a{
     height: 1020px;
     background: #E17992;
 }
+.menu-item{
+    padding-left: 24px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+.menu-item:hover,
+.menu-item:focus{
+    color: #D41443;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-li{
+    padding-bottom: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #E18298;
+    border-bottom: 1px solid #E18298
+}

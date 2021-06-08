@@ -40,6 +40,7 @@ button {
   margin-right: auto;
   padding-top: 37px;
   min-width: 320px;
+  
   @media screen and (min-width: 480px) {
     width: 480px;
     padding-left: 20px;
@@ -65,7 +66,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: static;
+  position: relative;
 }
 .header__logo {
   display: inline-flex;
@@ -144,11 +145,15 @@ button {
 .header__but:hover {
   background: #ecebeb;
 }
-
+.hero__span{
+  position: relative;
+}
 .hero__tittle {
   margin-top: 0;
+  
   @media screen and (min-width: 480px) {
     padding-top: 137px;
+
   }
   @media screen and (min-width: 768px) {
     padding-top: 15px;
@@ -245,12 +250,12 @@ button {
 
   @media screen and (min-width: 480px) {
     margin-bottom: 160px;
-    margin-left: 20px;
+    margin-left: 0;
     margin-top: 20px;
   }
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
-    margin-left: 34px;
+    margin-left: 0;
     margin-top: 20px;
   }
   @media screen and (min-width: 1200px) {
@@ -363,6 +368,33 @@ button {
     padding-bottom: 50px;
   }
 }
+
+.back{
+  right: -65px;
+  position: absolute;
+  bottom: 75px;
+@media screen and (min-width:480px) {
+  width: 346px;
+  height: 344px;
+  
+  
+}
+@media screen and (min-width:768px) {
+  width: 324px;
+  height: 322px;
+  right: 137px;
+  bottom: 46px;
+  
+}
+@media screen and (min-width:1200px) {
+width: 538px;
+height: 538px;
+right: 137px;
+bottom: 46px;
+  
+}
+
+}
 .ice {
   position: absolute;
   width: 171px;
@@ -374,24 +406,21 @@ button {
     height: 410px;
     right: 32px;
     bottom: 0;
-    background: url(/images/header-hero/back.png);
-    background-size: 346px 344px;
+   
   }
   @media screen and (min-width: 768px) {
     width: 143px;
     height: 336px;
     left: 378px;
     top: -10px;
-    background: url(/images/header-hero/back.png);
-    background-size: 324px 322px;
+  
   }
   @media screen and (min-width: 1200px) {
     width: 236px;
     height: 557px;
     left: 594px;
     top: 20px;
-    background: url(/images/header-hero/back.png);
-    background-size: 538px 538px;
+   
   }
 }
 .girl {
@@ -413,5 +442,27 @@ button {
     display: block;
     right: 109px;
     bottom: 0;
+  }
+}
+.right{
+  display: none;
+  @media screen and (min-width:480px) {
+
+  }
+  @media screen and (min-width:768px) {
+position: absolute;
+display: block;
+bottom: 34px;
+left: 154px;
+width: 18px;
+height: 18px;
+  }
+  @media screen and (min-width:1200px) {
+    position: absolute;
+    display: block;
+    bottom: 56px;
+    left: 295px;
+    width: 26px;
+height: 26px;
   }
 }

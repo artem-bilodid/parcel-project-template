@@ -21,10 +21,9 @@
   }
 }
 
-.buy-mobile-menu {
-  display: flex;
-  align-items: center;
-  text-align: center;
+.mobile-menu__button {
+  display: block;
+  margin: 60px auto 20px;
 }
 
 .mobile-menu__link {

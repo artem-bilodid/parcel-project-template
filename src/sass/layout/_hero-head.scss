@@ -27,11 +27,13 @@ button {
     width: 768px;
     padding-left: 35px;
     padding-right: 35px;
+    overflow: visible;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
     padding-left: 45px;
     padding-right: 45px;
+    overflow: visible;
   }
 }
 .header-container {

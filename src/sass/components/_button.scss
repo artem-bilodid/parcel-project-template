@@ -1,47 +1,47 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
-.buy-mobile-menu {
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
+
 .button {
   width: 80.72px;
   height: 44px;
-  left: 77.28px;
-  top: 60px;
 
   font-family: DM Sans;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 21px;
   display: inline-block;
   align-items: center;
   text-align: center;
 
-  color: #d41443;
   width: 186px;
   height: 44px;
-  background: #ffffff;
+
   border-radius: 22px;
   border: 0px;
   margin-left: 34px;
   margin-top: 23px;
   margin-bottom: 19px;
 }
-.button:focus,
-.button:hover {
-  color: #ffffff;
-  background: #d41443;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.button--secondary {
+  color: #d41443;
+  background-color: #ffffff;
+
+  &:focus,
+  &:hover {
+    color: #ffffff;
+    background-color: #d41443;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-.buy-now {
+
+.button__text {
   padding-right: 21px;
 }
-.right-arrow {
+.button__icon {
   display: inline-flex;
   fill: none;
   stroke: currentColor;
@@ -50,8 +50,6 @@
 }
 
 .close-button {
-  width: 14px;
-  height: 14px;
   cursor: pointer;
   padding: 0px;
   display: flex;
@@ -70,10 +68,7 @@
     color: #d41443;
   }
 }
-.close-svg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.icon-close {
   fill: none;
   stroke: currentColor;
   width: 14px;

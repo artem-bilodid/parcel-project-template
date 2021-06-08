@@ -17,11 +17,11 @@ button {
   margin-right: auto;
   position: relative;
   min-width: 320px;
+  overflow: hidden;
   @media screen and (min-width: 480px) {
     width: 480px;
     padding-left: 20px;
     padding-right: 20px;
-    overflow: hidden;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
@@ -43,7 +43,10 @@ button {
   margin-right: auto;
   padding-top: 37px;
   min-width: 320px;
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   @media screen and (min-width: 480px) {
     width: 480px;
     padding-left: 20px;
@@ -53,31 +56,31 @@ button {
     width: 768px;
     padding-left: 35px;
     padding-right: 35px;
-    display: flex;
-    justify-content: space-between;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
     padding-left: 45px;
     padding-right: 45px;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
   }
 }
-.header {
+/*.header {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+}*/
+.header__svg {
+  stroke: #d41443;
+
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
 }
-.header__svg{
-  fill: #D41443;
-  position: absolute;
-}
-.header__logo {
-  display: inline-flex;
-}
+
 .header__list {
   display: none;
   @media screen and (min-width: 480px) {
@@ -112,9 +115,6 @@ button {
 .header__but {
   display: none;
 
-  @media screen and (min-width: 480px) {
-    display: none;
-  }
   @media screen and (min-width: 768px) {
     width: 160px;
     height: 44px;
@@ -125,7 +125,7 @@ button {
     font-weight: bold;
     font-size: 16px;
     line-height: 1.31;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -140,7 +140,7 @@ button {
     font-weight: bold;
     font-size: 16px;
     line-height: 1.31;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -152,15 +152,19 @@ button {
 .header__but:hover {
   background: #ecebeb;
 }
-.hero__span{
+.header__svg-but {
+  fill: #d41443;
+  width: 20px;
+  height: 20px;
+}
+.hero__span {
   position: relative;
 }
 .hero__tittle {
   margin-top: 0;
-  
+
   @media screen and (min-width: 480px) {
     padding-top: 137px;
-
   }
   @media screen and (min-width: 768px) {
     padding-top: 15px;
@@ -376,32 +380,26 @@ button {
   }
 }
 
-.back{
+.back {
   right: -65px;
   position: absolute;
   bottom: 75px;
-@media screen and (min-width:480px) {
-  width: 346px;
-  height: 344px;
- 
-  
-  
-}
-@media screen and (min-width:768px) {
-  width: 324px;
-  height: 322px;
-  right: 137px;
-  bottom: 46px;
-  
-}
-@media screen and (min-width:1200px) {
-width: 538px;
-height: 538px;
-right: 137px;
-bottom: 46px;
-  
-}
-
+  @media screen and (min-width: 480px) {
+    width: 346px;
+    height: 344px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 324px;
+    height: 322px;
+    right: 137px;
+    bottom: 46px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 538px;
+    height: 538px;
+    right: 137px;
+    bottom: 46px;
+  }
 }
 .ice {
   position: absolute;
@@ -414,21 +412,18 @@ bottom: 46px;
     height: 410px;
     right: 32px;
     bottom: 0;
-   
   }
   @media screen and (min-width: 768px) {
     width: 143px;
     height: 336px;
     left: 378px;
     top: -10px;
-  
   }
   @media screen and (min-width: 1200px) {
     width: 236px;
     height: 557px;
     left: 594px;
     top: 20px;
-   
   }
 }
 .girl {
@@ -452,25 +447,115 @@ bottom: 46px;
     bottom: 0;
   }
 }
-.right{
+.right {
   display: none;
-  @media screen and (min-width:480px) {
 
-  }
-  @media screen and (min-width:768px) {
-position: absolute;
-display: block;
-bottom: 34px;
-left: 154px;
-width: 18px;
-height: 18px;
-  }
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 768px) {
+    background: #ffffff;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    outline: none;
+    border-radius: 50%;
+    border-color: #ffffff;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    display: block;
+    bottom: 34px;
+    left: 154px;
+  }
+  @media screen and (min-width: 1200px) {
+    background: #ffffff;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    outline: none;
+    border-radius: 50%;
+    border-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
     bottom: 56px;
     left: 295px;
-    width: 26px;
-height: 26px;
+  }
+}
+.right-svg {
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    width: 7px;
+    height: 7px;
+    fill: #d41443;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 10px;
+    fill: #d41443;
+  }
+}
+.check {
+  display: none;
+  position: absolute;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    right: 44px;
+    top: 96px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    right: 115px;
+    top: 160px;
+  }
+}
+
+.check__one {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: right;
+  color: #d41443;
+  letter-spacing: 0.04em;
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+    line-height: 1.14;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+    line-height: 1.2;
+  }
+}
+.check__one::after {
+  @media screen and (min-width: 768px) {
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+    background: #ffffff;
+  }
+  @media screen and (min-width: 1200px) {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background: #ffffff;
+  }
+}
+.check__two {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+
+  text-align: right;
+
+  color: #ffffff;
+  @media screen and (min-width: 768px) {
+    font-size: 8px;
+    line-height: 1.25;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.28;
   }
 }

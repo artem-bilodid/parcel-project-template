@@ -1,0 +1,70 @@
+.about {
+  padding-top: 125px;
+  background-color: var(--bg-about-footer);
+}
+
+.about__label {
+  display: block;
+  margin-bottom: 15px;
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFA5BA;
+}
+
+.about__title {
+  margin-bottom: 26px;
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+
+.about__description {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.about__text {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+
+  &--black {
+    padding: 40px 0;
+    color: #000000;
+  }
+
+  &--gray {
+    padding-bottom: 20px;
+    color: #907E82;
+  }
+}
+
+.about__button {
+  background: rgb(237, 60, 103);
+  border-radius: 22px;
+  border: none;
+  width: 176px;
+  height: 44px;
+
+  font-family: DM Sans, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #D41443;
+}
+
+.about__icone {
+  margin-left: 13px;
+  width: 8px;
+  height: 10px;
+  stroke:  #ecebeb;
+  fill: none;
+}

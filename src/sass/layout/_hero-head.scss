@@ -21,6 +21,7 @@ button {
     width: 480px;
     padding-left: 20px;
     padding-right: 20px;
+    overflow: hidden;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
@@ -376,6 +377,7 @@ button {
 @media screen and (min-width:480px) {
   width: 346px;
   height: 344px;
+ 
   
   
 }

@@ -523,10 +523,12 @@ button {
   @media screen and (min-width: 768px) {
     font-size: 28px;
     line-height: 1.14;
+    z-index: 2;
   }
   @media screen and (min-width: 1200px) {
     font-size: 46px;
     line-height: 1.2;
+    z-index: 2;
   }
 }
 .check__one::after {
@@ -539,7 +541,7 @@ button {
     background: #ffffff;
     position: absolute;
     left: 34px;
-    
+    z-index: 1;
   }
   @media screen and (min-width: 1200px) {
     content: '';
@@ -549,7 +551,7 @@ button {
     background: #ffffff;
     position: absolute;
     left: 62px;
-    
+    z-index: 1;
   }
 }
 .check__two {

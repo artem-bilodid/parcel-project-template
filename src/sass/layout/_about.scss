@@ -1,8 +1,40 @@
 .about {
   padding-top: 125px;
+  padding-bottom: 39px;
   background-color: var(--bg-about-footer);
+
+  @media (min-width: $tablet) and (max-width:1279.99px) {
+  padding-top: 130px;
+  padding-bottom: 66px;
+  }
+  @media (min-width: $desktop) {
+  padding-top: 156px;
+  }
 }
 
+.about__container {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    width: $tablet;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+    padding-left: 114px;
+    padding-right: 114px;
+  }
+}
 
 .about__description{
   

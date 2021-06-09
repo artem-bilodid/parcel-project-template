@@ -46,6 +46,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -63,23 +64,22 @@ button {
     padding-right: 45px;
   }
 }
-/*.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}*/
 .header__svg {
   stroke: #d41443;
-
-  @media screen and (min-width: 480px) {
+ @media screen and (min-width: 480px) {
+   right: 20px;
   }
   @media screen and (min-width: 768px) {
+    position: absolute;
+    right: 210px;
+ 
+
   }
   @media screen and (min-width: 1200px) {
     display: none;
   }
 }
+
 
 .header__list {
   display: none;
@@ -130,7 +130,7 @@ button {
     text-align: center;
     align-items: center;
     color: #d41443;
-    margin-left: 341px;
+    
   }
   @media screen and (min-width: 1200px) {
     background: #ffffff;
@@ -392,7 +392,7 @@ button {
     width: 324px;
     height: 322px;
     right: 137px;
-    bottom: 46px;
+    bottom: 40px;
   }
   @media screen and (min-width: 1200px) {
     width: 538px;
@@ -483,8 +483,8 @@ button {
   @media screen and (min-width: 480px) {
   }
   @media screen and (min-width: 768px) {
-    width: 7px;
-    height: 7px;
+    width: 10px;
+    height: 10px;
     fill: #d41443;
   }
   @media screen and (min-width: 1200px) {
@@ -496,7 +496,7 @@ button {
 .check {
   display: none;
   position: absolute;
-
+  
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -519,6 +519,7 @@ button {
   text-align: right;
   color: #d41443;
   letter-spacing: 0.04em;
+ 
   @media screen and (min-width: 768px) {
     font-size: 28px;
     line-height: 1.14;
@@ -529,17 +530,26 @@ button {
   }
 }
 .check__one::after {
+ 
   @media screen and (min-width: 768px) {
+    content: '';
     border-radius: 50%;
     height: 16px;
     width: 16px;
     background: #ffffff;
+    position: absolute;
+    left: 34px;
+    
   }
   @media screen and (min-width: 1200px) {
+    content: '';
     border-radius: 50%;
     height: 30px;
     width: 30px;
     background: #ffffff;
+    position: absolute;
+    left: 62px;
+    
   }
 }
 .check__two {

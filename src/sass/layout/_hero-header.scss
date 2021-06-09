@@ -42,7 +42,7 @@ button {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 37px;
+ 
   min-width: 320px;
   display: flex;
   justify-content: space-between;
@@ -53,16 +53,19 @@ button {
     width: 480px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 6px;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
     padding-left: 35px;
     padding-right: 35px;
+    padding-top: 37px;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
     padding-left: 45px;
     padding-right: 45px;
+    padding-top: 37px;
   }
 }
 .header__svg {
@@ -154,12 +157,15 @@ button {
   background: #ecebeb;
 }
 .header__svg-but {
-  fill: #d41443;
-  width: 20px;
-  height: 20px;
+  stroke: #d41443;
+  fill: none;
+  width: 8px;
+  height: 16px;
+  margin-left: 12px;
 }
 .hero__span {
   position: relative;
+  padding-left:20px;
 }
 .hero__tittle {
   margin-top: 0;
@@ -178,7 +184,7 @@ button {
 .hero__one {
   color: #ffffff;
   @media screen and (min-width: 480px) {
-    font-family: Titan One;
+     font-family: $fontAccent;
     font-style: normal;
     font-weight: normal;
     font-size: 26px;
@@ -189,7 +195,7 @@ button {
     color: #ffffff;
   }
   @media screen and (min-width: 768px) {
-    font-family: Titan One;
+     font-family: $fontAccent;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -200,7 +206,7 @@ button {
     color: #ffffff;
   }
   @media screen and (min-width: 1200px) {
-    font-family: Titan One;
+     font-family: $fontAccent;
     font-style: normal;
     font-weight: normal;
     font-size: 38px;
@@ -216,7 +222,7 @@ button {
   color: #d41443;
 
   @media screen and (min-width: 480px) {
-    font-family: Titan One;
+     font-family: $fontAccent;
     font-style: normal;
     font-weight: normal;
     font-size: 48px;
@@ -228,7 +234,7 @@ button {
     color: #d41443;
   }
   @media screen and (min-width: 768px) {
-    font-family: Titan One;
+     font-family: $fontAccent;
     font-style: normal;
     font-weight: normal;
     font-size: 37px;
@@ -240,7 +246,7 @@ button {
     color: #d41443;
   }
   @media screen and (min-width: 1200px) {
-    font-family: Titan One;
+     font-family: $fontAccent;
     font-style: normal;
     font-weight: normal;
     font-size: 58px;
@@ -257,7 +263,7 @@ button {
   justify-content: center;
   align-items: center;
   margin-bottom: 160px;
-  margin-left: 20px;
+  
   margin-top: 20px;
 
   @media screen and (min-width: 480px) {
@@ -360,6 +366,38 @@ button {
 .hero__products1:focus,
 .hero__products1:hover {
   background: #ecebeb;
+}
+.hero__text{
+
+  @media screen and (min-width:480px) {
+display: none;
+  }
+  @media screen and (min-width:768px) {
+    width: 114px;
+    font-family: DM Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 8px;
+line-height: 150%;
+color: #FFFFFF;
+left: 154px;
+bottom: 59px;
+display: block;
+position: absolute;
+  }
+  @media screen and (min-width:1200px) {
+width: 200px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 140%;
+color: #FFFFFF;
+left: 295px;
+bottom: 102px;
+display: block;
+position: absolute;
+  }
 }
 
 .milk {
@@ -513,7 +551,7 @@ button {
 }
 
 .check__one {
-  font-family: Titan One;
+   font-family: $fontAccent;
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;

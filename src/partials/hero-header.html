@@ -1,9 +1,11 @@
 <header class="header" id="hero-header" >
     <div class="header-container">
       <a class="header__logo" href="" > <img srcset="./images/header-hero/logo.png 1x, ./images/header-hero/logo@2x.png 2x " alt="" width="199px" height="50px"> </a>
+     <button type="button" class="burger"  data-menu-modal-open>
       <svg class="header__svg" width="20" height="12">
         <use href="./icons/sprite.svg#icon-burger" ></use>
       </svg>
+</button>
       <ul class="header__list">
         <li class="header__line">
           <a class="header__link" href="#hero-header">Home</a>
@@ -18,7 +20,7 @@
           <a class="header__link" href="#products">Our products</a>
         </li>
         <li class="header__line"> 
-          <a class="header__link" href="">Contact</a>
+          <a class="header__link" href="#contacts">Contact</a>
         </li>
       </ul>
       <button class="header__but"> <span>Buy now</span> 
@@ -42,8 +44,8 @@
         <span class="hero__two"> PASSION</span>
       </h1>
   <div class="hero__prod">
-      <button class="hero__products">Products</button>
-      <button class="hero__products1">How it’s made?</button>
+      <a class="hero__products1" href="#products">Products</a>
+      <a class="hero__products" href="#about">How it’s made?</a>
    </div> 
    </div>
    <span><img class="milk" srcset="./images/header-hero/milk.png 1x, ./images/header-hero/milk@2x.png 2x" alt=""></span> 

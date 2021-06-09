@@ -3,6 +3,7 @@
     <p class="about__label">tradition and love</p>
     <h2 class="about__title">how it’s made?</h2>
     <div class="about__description">
+      <div class="about__picture">
       <picture>
         <source
           srcset="
@@ -12,9 +13,10 @@
           media="(min-width: 320px)"
           type="image/png"
         />
-        <img src="./images/gallery/desktop/big-eco-desktop.png" width="280" alt="cow and milk" />
+        <img src="./images/gallery/desktop/big-eco-desktop.png" alt="cow and milk" />
       </picture>
-      
+    </div>
+    <div class="about__text-box">
       <p class="about__text about__text--black">
         Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
         lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
@@ -22,12 +24,17 @@
       <p class="about__text about__text--gray">
         Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
         in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
-        maximus. Cras massa nibh, tincidunt.
-      </p>
-      <p class="about__text about__text--gray">Aliquam erat volutpat. Aenean accumsan.</p>
-      <button class="about__button" type="button">
-        Read more
-      </button>
+        maximus. Cras massa nibh, tincidunt.</br>
+      </br>
+        Aliquam erat volutpat. Aenean accumsan.</p>
+        <button type="button" class="button button--secondary about__button">
+          <span class="button__text">Read more</span>
+          <svg class="button__icon">
+            <use href="./icons/sprite.svg#icon-right"></use>
+          </svg>
+        </button>
+        
+    </div>
     </div>
   </div>
 </section>

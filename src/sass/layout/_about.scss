@@ -2,14 +2,32 @@
   padding-top: 125px;
   padding-bottom: 39px;
   background-color: var(--bg-about-footer);
-
+  /*background-image: url("../images/gallery/mobile/milk-mobail.png");
+  background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	*/
+  @media (min-width: 480px){
+  background-image: url("../images/gallery/desktop/milk-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 480px, cover;
+  background-position: 50% 766px;
+  }
   @media (min-width: $tablet) and (max-width:1279.99px) {
   padding-top: 130px;
   padding-bottom: 66px;
   }
   @media (min-width: $desktop) {
+  background-image: url("../images/gallery/desktop/milk-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 1280px, cover;
+  background-position: 50% 342px;
   padding-top: 156px;
   }
+  
+	
+
 }
 
 .about__container {
@@ -83,51 +101,95 @@
   }
 }
 
-.about__description{
+.about__description {
+  display: flex;
+  flex-direction: column;
   
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
-	background-color: var(--bg-color-overlay);
-	background-image: url("../images/gallery/desktop/milk-desktop.png");
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: 1280px) {
+   
+  }
 }
 
-.about__description {
+.about__picture {
+  display: flex;
+  padding:0;
+  width: 100%;
+  margin-bottom: 46px;
+  
+  @media screen and (min-width: 768px) {
+  width: 340px;
+  margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+   width: 516px;
+   margin-bottom: 0;
+  }
+}
+.about__text-box{
+  display: flex;
+  flex-direction: column;
   padding-left: 30px;
   padding-right: 30px;
-}
+  width: 100%;
 
+
+  
+  @media screen and (min-width: 768px) {
+  width: 340px;
+  margin-left: 17px;
+  margin-top: 50px;
+  padding-left: 0;
+  padding-right: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+   width: 463px;
+   margin-left: 74px;
+  }
+}
 .about__text {
+  
+
   font-family: $fontMain;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
 
   &--black {
-    padding: 40px 0;
-    color: #000000;
+  color: var(--text-color-prime);
+  margin-bottom: 47px;
   }
 
   &--gray {
-    padding-bottom: 20px;
-    color: #907E82;
+  color: var(--text-color-secondary);
+  margin-bottom: 17px;
+
+  @media screen and (min-width: 768px) {
+  margin-bottom: 62px;
+    }
+  
+    @media screen and (min-width: 1280px) {
+  margin-bottom: 45px;
+    }
   }
 }
 
-.about__button {
-  background: rgb(237, 60, 103);
-  border-radius: 22px;
-  border: none;
+.button.about__button {
   width: 176px;
   height: 44px;
+  padding: 0;
 
   font-family: $fontMain;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
-  color: #D41443;
+  color: var(--accent-text-color);
 }
 
 .about__icone {

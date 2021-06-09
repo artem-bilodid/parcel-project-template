@@ -1,16 +1,3 @@
-ul {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-}
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-button {
-  outline: none;
-  border: none;
-}
 .hero-container {
   background: #ffb8ca;
   width: 100%;
@@ -31,18 +18,20 @@ button {
     overflow: visible;
   }
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    min-width: 1280px;
     padding-left: 45px;
     padding-right: 45px;
     overflow: visible;
   }
 }
-.header-container {
+.header{
   background: #ffb8ca;
+}
+.header-container {
+  
   width: 100%;
   margin-left: auto;
   margin-right: auto;
- 
   min-width: 320px;
   display: flex;
   justify-content: space-between;
@@ -62,28 +51,25 @@ button {
     padding-top: 37px;
   }
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    min-width: 1280px;
     padding-left: 45px;
-    padding-right: 45px;
+    padding-right:45px;
     padding-top: 37px;
   }
 }
 .header__svg {
   stroke: #d41443;
- @media screen and (min-width: 480px) {
-   right: 20px;
+  @media screen and (min-width: 480px) {
+    right: 20px;
   }
   @media screen and (min-width: 768px) {
     position: absolute;
     right: 210px;
- 
-
   }
   @media screen and (min-width: 1200px) {
     display: none;
   }
 }
-
 
 .header__list {
   display: none;
@@ -95,22 +81,25 @@ button {
   }
   @media screen and (min-width: 1200px) {
     display: inline-flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
   }
 }
 .header__line:not(:last-child) {
   margin-right: 35px;
 }
 .header__link {
-  font-family: DM Sans;
+   font-family: $fontMain;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.31px;
-
   display: flex;
   align-items: center;
-
   color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
 }
 .header__link:hover,
 .header__link:focus {
@@ -118,13 +107,14 @@ button {
 }
 .header__but {
   display: none;
-
+  outline: none;
+  border: none;
   @media screen and (min-width: 768px) {
     width: 160px;
     height: 44px;
     background: #ffffff;
     border-radius: 22px;
-    font-family: DM Sans;
+     font-family: $fontMain;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -134,12 +124,11 @@ button {
     text-align: center;
     align-items: center;
     color: #d41443;
-    
   }
   @media screen and (min-width: 1200px) {
     background: #ffffff;
     border-radius: 22px;
-    font-family: DM Sans;
+     font-family: $fontMain;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -163,13 +152,15 @@ button {
   height: 16px;
   margin-left: 12px;
 }
+.hero{
+  background: #ffb8ca;
+}
 .hero__span {
   position: relative;
-  padding-left:20px;
+  padding-left: 20px;
 }
 .hero__tittle {
   margin-top: 0;
-
   @media screen and (min-width: 480px) {
     padding-top: 137px;
   }
@@ -184,45 +175,40 @@ button {
 .hero__one {
   color: #ffffff;
   @media screen and (min-width: 480px) {
-     font-family: $fontAccent;
+    font-family: $fontAccent;
     font-style: normal;
     font-weight: normal;
     font-size: 26px;
     line-height: 1.15;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
     color: #ffffff;
   }
   @media screen and (min-width: 768px) {
-     font-family: $fontAccent;
+    font-family: $fontAccent;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
     line-height: 1.13;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
     color: #ffffff;
   }
   @media screen and (min-width: 1200px) {
-     font-family: $fontAccent;
+    font-family: $fontAccent;
     font-style: normal;
     font-weight: normal;
     font-size: 38px;
     line-height: 1.33;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
     color: #ffffff;
   }
 }
-
 .hero__two {
   color: #d41443;
-
   @media screen and (min-width: 480px) {
-     font-family: $fontAccent;
+    font-family: $fontAccent;
     font-style: normal;
     font-weight: normal;
     font-size: 48px;
@@ -230,11 +216,10 @@ button {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
     color: #d41443;
   }
   @media screen and (min-width: 768px) {
-     font-family: $fontAccent;
+    font-family: $fontAccent;
     font-style: normal;
     font-weight: normal;
     font-size: 37px;
@@ -242,11 +227,10 @@ button {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
     color: #d41443;
   }
   @media screen and (min-width: 1200px) {
-     font-family: $fontAccent;
+    font-family: $fontAccent;
     font-style: normal;
     font-weight: normal;
     font-size: 58px;
@@ -254,7 +238,6 @@ button {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
     color: #d41443;
   }
 }
@@ -263,9 +246,7 @@ button {
   justify-content: center;
   align-items: center;
   margin-bottom: 160px;
-  
   margin-top: 20px;
-
   @media screen and (min-width: 480px) {
     margin-bottom: 160px;
     margin-left: 0;
@@ -283,8 +264,9 @@ button {
   }
 }
 .hero__products {
+  border: none;
   outline: none;
-  font-family: DM Sans;
+   font-family: $fontMain;
   font-style: normal;
   font-weight: normal;
   border-radius: 20px;
@@ -313,7 +295,6 @@ button {
   @media screen and (min-width: 1200px) {
     width: 104px;
     height: 40px;
-
     font-size: 14px;
     line-height: 1.28;
   }
@@ -323,6 +304,8 @@ button {
   background: #c7133e;
 }
 .hero__products1 {
+  
+  border: none;
   outline: none;
   width: 82px;
   height: 24px;
@@ -332,33 +315,29 @@ button {
   align-items: center;
   text-align: center;
   justify-content: center;
-  font-family: DM Sans;
+   font-family: $fontMain;
   font-style: normal;
   font-weight: normal;
   background-color: #ffffff;
   font-size: 8px;
   line-height: 1.25;
-
   width: 82px;
   height: 24px;
   @media screen and (min-width: 480px) {
     font-size: 8px;
     line-height: 1.25;
-
     width: 82px;
     height: 24px;
   }
   @media screen and (min-width: 768px) {
     font-size: 8px;
     line-height: 1.25;
-
     width: 82px;
     height: 24px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.28;
-
     width: 138px;
     height: 40px;
   }
@@ -367,39 +346,37 @@ button {
 .hero__products1:hover {
   background: #ecebeb;
 }
-.hero__text{
-
-  @media screen and (min-width:480px) {
-display: none;
+.hero__text {
+  @media screen and (min-width: 480px) {
+    display: none;
   }
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     width: 114px;
-    font-family: DM Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 8px;
-line-height: 150%;
-color: #FFFFFF;
-left: 154px;
-bottom: 59px;
-display: block;
-position: absolute;
+     font-family: $fontMain;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 150%;
+    color: #ffffff;
+    left: 154px;
+    bottom: 59px;
+    display: block;
+    position: absolute;
   }
-  @media screen and (min-width:1200px) {
-width: 200px;
-font-family: DM Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 140%;
-color: #FFFFFF;
-left: 295px;
-bottom: 102px;
-display: block;
-position: absolute;
+  @media screen and (min-width: 1200px) {
+    width: 200px;
+     font-family: $fontMain;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    color: #ffffff;
+    left: 295px;
+    bottom: 102px;
+    display: block;
+    position: absolute;
   }
 }
-
 .milk {
   display: none;
   @media screen and (min-width: 480px) {
@@ -418,7 +395,6 @@ position: absolute;
     padding-bottom: 50px;
   }
 }
-
 .back {
   right: -65px;
   position: absolute;
@@ -461,7 +437,7 @@ position: absolute;
   @media screen and (min-width: 1200px) {
     width: 236px;
     height: 557px;
-    left: 594px;
+    left: 694px;
     top: 20px;
   }
 }
@@ -486,9 +462,10 @@ position: absolute;
     bottom: 0;
   }
 }
-.right {
+.hero__button-right {
   display: none;
-
+  border: none;
+  outline: none;
   @media screen and (min-width: 768px) {
     background: #ffffff;
     width: 18px;
@@ -518,6 +495,10 @@ position: absolute;
     left: 295px;
   }
 }
+.hero__button-right:focus,
+.hero__button-right:hover{
+  background: #ecebeb;
+}
 .right-svg {
   @media screen and (min-width: 480px) {
   }
@@ -535,7 +516,6 @@ position: absolute;
 .check {
   display: none;
   position: absolute;
-  
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -551,14 +531,13 @@ position: absolute;
 }
 
 .check__one {
-   font-family: $fontAccent;
+  font-family: $fontAccent;
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
   text-align: right;
   color: #d41443;
   letter-spacing: 0.04em;
- 
   @media screen and (min-width: 768px) {
     font-size: 28px;
     line-height: 1.14;
@@ -573,7 +552,6 @@ position: absolute;
   }
 }
 .check__one::before {
- 
   @media screen and (min-width: 768px) {
     content: '';
     border-radius: 50%;
@@ -596,12 +574,10 @@ position: absolute;
   }
 }
 .check__two {
-  font-family: DM Sans;
+   font-family: $fontMain;
   font-style: normal;
   font-weight: normal;
-
   text-align: right;
-
   color: #ffffff;
   @media screen and (min-width: 768px) {
     font-size: 8px;

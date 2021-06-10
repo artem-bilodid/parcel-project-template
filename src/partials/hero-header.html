@@ -3,7 +3,7 @@
     <nav class="header__navigation">
       <a class="header__logo" href="">
         <img
-          srcset="./images/header-hero/logo.png 1x, ./images/header-hero/logo@2x.png 2x"
+          srcset="./images/hero-header/logo.png 1x, ./images/hero-header/logo@2x.png 2x"
           alt=""
           width="199px"
           height="50px"
@@ -19,10 +19,10 @@
           <a class="header__link" href="#hero-header">Home</a>
         </li>
         <li class="header__line">
-          <a class="header__link" href="#about">About us</a>
+          <a class="header__link" href="#advantages">About us</a>
         </li>
         <li class="header__line">
-          <a class="header__link" href="#advantages">How it’s made?</a>
+          <a class="header__link" href="#about">How it’s made?</a>
         </li>
         <li class="header__line">
           <a class="header__link" href="#products">Our products</a>
@@ -45,22 +45,55 @@
       <span
         ><img
           class="hero__background-round"
-          srcset="./images/header-hero/back.png 1x, ./images/header-hero/back@2x.png 2x"
+          srcset="./images/hero-header/back.png 1x, ./images/hero-header/back@2x.png 2x"
           alt=""
       /></span>
-      <span>
+      <picture>
+        <source
+          srcset="
+            ./images/hero-header/desktop/ice.png    1x,
+            ./images/hero-header/desktop/ice@2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./images/hero-header/tablet/ice.png 1x, ./images/hero-header/tablet/ice@2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/hero-header/mobile/ice.png 1x, ./images/hero-header/mobile/ice@2x.png 2x"
+        />
+        <img class="hero__image-ice" src="./images/hero-header/desktop/ice.png" alt="Icecream" />
+      </picture>
+      <!-- <span>
         <img
           class="hero__image-ice"
-          srcset="./images/header-hero/ice.png 1x, ./images/header-hero/ice@2x.png 2x"
+          srcset="./images/hero-header/ice.png 1x, ./images/hero-header/ice@2x.png 2x"
           alt=""
-      /></span>
-      <span
+      /></span> -->
+      <picture>
+        <source
+          srcset="
+            ./images/hero-header/desktop/girl.png    1x,
+            ./images/hero-header/desktop/girl@2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/hero-header/tablet/girl.png    1x,
+            ./images/hero-header/tablet/girl@2x.png 2x
+          "
+        />
+        <img class="hero__image-girl" src="./images/hero-header/desktop/girl.png" alt="Girl" />
+      </picture>
+      <!-- <span
         ><img
           class="girl"
-          srcset="./images/header-hero/girl.png 1x, ./images/header-hero/girl@2x.png 2x"
+          srcset="./images/hero-header/girl.png 1x, ./images/hero-header/girl@2x.png 2x"
           alt=""
-      /></span>
-      <div class="hero__span">
+      /></span> -->
+      <div class="hero__title-container">
         <h1 class="hero__tittle">
           <span class="hero__one">
             ice cream <br />
@@ -68,17 +101,33 @@
           /></span>
           <span class="hero__two"> PASSION</span>
         </h1>
-        <div class="hero__prod">
-          <a class="hero__products" href="#products">Products</a>
-          <a class="hero__products1" href="#advantages">How it’s made?</a>
+        <div class="hero__links-container">
+          <a class="hero__products-link" href="#products">Products</a>
+          <a class="hero__about-link" href="#about">How it’s made?</a>
         </div>
       </div>
-      <span
+      <picture>
+        <source
+          srcset="
+            ./images/hero-header/desktop/milk.png    1x,
+            ./images/hero-header/desktop/milk@2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/hero-header/tablet/milk.png    1x,
+            ./images/hero-header/tablet/milk@2x.png 2x
+          "
+        />
+        <img class="hero__milk-image" src="./images/hero-header/desktop/girl.png" alt="Girl" />
+      </picture>
+      <!-- <span
         ><img
-          class="milk"
-          srcset="./images/header-hero/milk.png 1x, ./images/header-hero/milk@2x.png 2x"
+          class="hero__milk-image"
+          srcset="./images/hero-header/milk.png 1x, ./images/hero-header/milk@2x.png 2x"
           alt=""
-      /></span>
+      /></span> -->
       <p class="hero__text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et

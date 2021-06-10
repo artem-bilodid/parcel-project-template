@@ -13,6 +13,7 @@
 }
 
 .header__container {
+  z-index: 1;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -40,7 +41,6 @@
 }
 
 .header__navigation {
-  z-index: 1;
   display: flex;
   flex-grow: 1;
   align-items: center;
@@ -141,7 +141,6 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  min-width: 320px;
   overflow: hidden;
   padding-top: 137px;
   padding-left: 20px;
@@ -402,8 +401,8 @@
   bottom: 75px;
   left: 36px;
 
-  width: 346px;
-  height: 344px;
+  min-width: 346px;
+  min-height: 344px;
 
   @media screen and (min-width: 768px) {
     width: 324px;

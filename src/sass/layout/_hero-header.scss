@@ -104,10 +104,11 @@
   stroke: currentColor;
 }
 
-.header__but {
+.header__buy-now-button {
   display: none;
   outline: none;
   border: none;
+  cursor: pointer;
   width: 160px;
   height: 44px;
   background: #ffffff;

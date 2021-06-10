@@ -84,10 +84,16 @@
 
 .header__burger-button {
   display: block;
+  cursor: pointer;
 
   background: transparent;
   border: none;
   color: #d41443;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
 
   @media screen and (min-width: 1280px) {
     display: none;
@@ -440,9 +446,7 @@
 .hero__image-girl {
   position: absolute;
   display: none;
-  @media screen and (min-width: 480px) {
-    display: none;
-  }
+
   @media screen and (min-width: 768px) {
     width: 168px;
     height: 133px;
@@ -453,7 +457,6 @@
   @media screen and (min-width: 1280px) {
     width: 293px;
     height: 232px;
-    display: block;
     right: 109px;
     bottom: 0;
   }

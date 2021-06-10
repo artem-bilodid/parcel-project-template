@@ -8,6 +8,7 @@
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 43px;
 
     @media (min-width: $mobile) {
       width: $mobile;
@@ -19,26 +20,18 @@
       width: $tablet;
       padding-left: 36px;
       padding-right: 36px;
+      padding-bottom: 91px;
     }
 
     @media (min-width: $desktop) {
       width: $desktop;
       padding-left: 114px;
       padding-right: 114px;
+      padding-bottom: 97px;
     }
   }
 
   // Footer Headings
-
-  .footer__headings {
-    @media (min-width: $tablet) {
-      margin-bottom: 90px;
-    }
-
-    @media (min-width: $desktop) {
-      margin-bottom: 100px;
-    }
-  }
 
   .footer__heading-one {
     margin-bottom: 17px;
@@ -140,7 +133,6 @@
 // Contact number
 
 .footer-phone {
-  margin-bottom: 23px;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.8;

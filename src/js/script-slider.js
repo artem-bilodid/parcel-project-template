@@ -4,15 +4,13 @@
   var list = document.querySelector('.customers__dots');
   var dots = list.querySelectorAll('.customers__dots-item');
   var intervalId;
-  var numActive =
-    [...dots].findIndex(node => node.getAttribute('data-active')) + 1;
+  var numActive = [...dots].findIndex(node => node.getAttribute('data-active')) + 1;
   dots[slideIndex - 1].dataset.active === '';
   function handlerActive(e) {
     var dots = e.currentTarget.children;
     [...dots].forEach(node => node.removeAttribute('data-active'));
     e.target.dataset.active = '';
-    var active =
-      [...dots].findIndex(node => node.getAttribute('data-active') === '') + 1;
+    var active = [...dots].findIndex(node => node.getAttribute('data-active') === '') + 1;
     currentSlide(active);
     sliderStart();
   }
@@ -55,8 +53,7 @@
     if (intervalId) {
       clearInterval(intervalId);
     }
-    numActive =
-      [...dots].findIndex(node => [...node.classList].includes('active')) + 1;
+    numActive = [...dots].findIndex(node => [...node.classList].includes('active')) + 1;
     intervalId = setInterval(() => {
       if (numActive !== 3) {
         numActive++;
@@ -64,7 +61,7 @@
         numActive = 1;
       }
       currentSlide(numActive);
-    }, 4000);
+    }, 5000);
   }
   if (!intervalId) {
     sliderStart();

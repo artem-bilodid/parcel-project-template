@@ -1,11 +1,19 @@
-<header class="header" id="hero-header" >
-    <div class="header-container">
-      <a class="header__logo" href="" > <img srcset="./images/header-hero/logo.png 1x, ./images/header-hero/logo@2x.png 2x " alt="" width="199px" height="50px"> </a>
-     <button type="button" class="burger"  data-menu-modal-open>
-      <svg class="header__svg" width="20" height="12">
-        <use href="./icons/sprite.svg#icon-burger" ></use>
-      </svg>
-</button>
+<header class="header" id="hero-header">
+  <div class="header__container">
+    <nav class="header__navigation">
+      <a class="header__logo" href="">
+        <img
+          srcset="./images/header-hero/logo.png 1x, ./images/header-hero/logo@2x.png 2x"
+          alt=""
+          width="199px"
+          height="50px"
+        />
+      </a>
+      <button type="button" class="header__burger-button" data-menu-modal-open>
+        <svg class="burger-button__icon" width="20" height="12">
+          <use href="./icons/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
       <ul class="header__list">
         <li class="header__line">
           <a class="header__link" href="#hero-header">Home</a>
@@ -19,55 +27,73 @@
         <li class="header__line">
           <a class="header__link" href="#products">Our products</a>
         </li>
-        <li class="header__line"> 
+        <li class="header__line">
           <a class="header__link" href="#contacts">Contact</a>
         </li>
       </ul>
-      <button class="header__but"> <span>Buy now</span> 
-        <svg class="header__svg-but">
-          <use href="./icons/sprite.svg#icon-right" ></use>
+    </nav>
+    <button class="header__but">
+      <span>Buy now</span>
+      <svg class="header__svg-but">
+        <use href="./icons/sprite.svg#icon-right"></use>
+      </svg>
+    </button>
+  </div>
+
+  <section class="hero">
+    <div class="hero__container">
+      <span
+        ><img
+          class="hero__background-round"
+          srcset="./images/header-hero/back.png 1x, ./images/header-hero/back@2x.png 2x"
+          alt=""
+      /></span>
+      <span>
+        <img
+          class="hero__image-ice"
+          srcset="./images/header-hero/ice.png 1x, ./images/header-hero/ice@2x.png 2x"
+          alt=""
+      /></span>
+      <span
+        ><img
+          class="girl"
+          srcset="./images/header-hero/girl.png 1x, ./images/header-hero/girl@2x.png 2x"
+          alt=""
+      /></span>
+      <div class="hero__span">
+        <h1 class="hero__tittle">
+          <span class="hero__one">
+            ice cream <br />
+            made with <br
+          /></span>
+          <span class="hero__two"> PASSION</span>
+        </h1>
+        <div class="hero__prod">
+          <a class="hero__products" href="#products">Products</a>
+          <a class="hero__products1" href="#advantages">How it’s made?</a>
+        </div>
+      </div>
+      <span
+        ><img
+          class="milk"
+          srcset="./images/header-hero/milk.png 1x, ./images/header-hero/milk@2x.png 2x"
+          alt=""
+      /></span>
+      <p class="hero__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+      <button class="hero__button-right">
+        <svg class="right-svg">
+          <use href="./icons/sprite.svg#icon-arrow-right2"></use>
         </svg>
       </button>
+      <div class="check">
+        <span class="check__one">16 </span>
+        <span class="check__two">cafes</span>
+        <span class="check__one">23 </span>
+        <span class="check__two">food trucks</span>
+      </div>
     </div>
-  </header>
-  <section class="hero">
-    <div class="hero-container">
-      <span><img class="back" srcset="./images/header-hero/back.png 1x, ./images/header-hero/back@2x.png 2x" alt=""></span>
-     <span> <img class="ice" srcset="./images/header-hero/ice.png 1x, ./images/header-hero/ice@2x.png 2x" alt=""></span>
-      <span><img class="girl" srcset="./images/header-hero/girl.png 1x, ./images/header-hero/girl@2x.png 2x" alt=""></span>
-      <div class="hero__span">
-      <h1 class="hero__tittle">
-        <span class="hero__one">
-          ice cream <br />
-          made with <br
-        /></span>
-        <span class="hero__two"> PASSION</span>
-      </h1>
-  <div class="hero__prod">
-      <a class="hero__products" href="#products">Products</a>
-      <a class="hero__products1" href="#about">How it’s made?</a>
-   </div> 
-   </div>
-   <span><img class="milk" srcset="./images/header-hero/milk.png 1x, ./images/header-hero/milk@2x.png 2x" alt=""></span> 
-   <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p> 
-<button class="hero__button-right">
-  <svg class="right-svg" >
-    <use href="./icons/sprite.svg#icon-arrow-right2"></use>
-  </svg>
-</button>
-<div class="check">
-   <span class="check__one">16  </span>
-   <span class="check__two">cafes</span>
-   <span class="check__one">23  </span>
-   <span class="check__two">food trucks</span>
-</div>
-    </div>
-  </section>  
-      
-  
-   
-    
-  
-  
-
-
+  </section>
+</header>

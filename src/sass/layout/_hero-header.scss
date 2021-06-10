@@ -1,6 +1,146 @@
-.hero-container {
+.header {
+  position: relative;
   background: #ffb8ca;
+  padding-top: 6px;
+
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 37px;
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.header__container {
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 1280px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
+.header__navigation {
+  z-index: 1;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__list {
+  display: none;
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1280px) {
+    display: inline-flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+.header__line:not(:last-child) {
+  margin-right: 35px;
+}
+.header__link {
+  font-family: $fontMain;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.header__link:hover,
+.header__link:focus {
+  color: #d41443;
+}
+
+.header__burger-button {
+  display: block;
+
+  background: transparent;
+  border: none;
+  color: #d41443;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.burger-button__icon {
+  stroke: currentColor;
+}
+
+.header__but {
+  display: none;
+  outline: none;
+  border: none;
+  width: 160px;
+  height: 44px;
+  background: #ffffff;
+  color: #d41443;
+  border-radius: 22px;
+  font-family: $fontMain;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 110px;
+  }
+}
+.header__but:focus,
+.header__but:hover {
+  background: #ecebeb;
+}
+.header__svg-but {
+  stroke: currentColor;
+  fill: none;
+  width: 8px;
+  height: 16px;
+  margin-left: 12px;
+}
+.hero {
+  @media screen and (min-width: 1280px) {
+    padding-top: 75px;
+  }
+}
+.hero__container {
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -17,164 +157,19 @@
     padding-right: 35px;
     overflow: visible;
   }
-  @media screen and (min-width: 1200px) {
-    min-width: 1280px;
-    padding-left: 45px;
-    padding-right: 45px;
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 115px;
+    padding-right: 115px;
     overflow: visible;
   }
 }
-.header{
-  background: #ffb8ca;
-}
-.header-container {
-  
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 320px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 6px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 37px;
-  }
-  @media screen and (min-width: 1200px) {
-    min-width: 1280px;
-    padding-left: 45px;
-    padding-right:45px;
-    padding-top: 37px;
-  }
-}
-.header__svg {
-  stroke: #d41443;
-  @media screen and (min-width: 480px) {
-    right: 20px;
-  }
-  @media screen and (min-width: 768px) {
-    position: absolute;
-    right: 210px;
-  }
-  @media screen and (min-width: 1200px) {
-    display: none;
-  }
-}
-
-.header__list {
-  display: none;
-  @media screen and (min-width: 480px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-  @media screen and (min-width: 1200px) {
-    display: inline-flex;
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-  }
-}
-.header__line:not(:last-child) {
-  margin-right: 35px;
-}
-.header__link {
-   font-family: $fontMain;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.31px;
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-  text-decoration: none;
-  cursor: pointer;
-}
-.header__link:hover,
-.header__link:focus {
-  color: #d41443;
-}
-.burger{
-  background: transparent;
-  border: none;
-}
-.header__but {
-  display: none;
-  outline: none;
-  border: none;
-  @media screen and (min-width: 768px) {
-    width: 160px;
-    height: 44px;
-    background: #ffffff;
-    border-radius: 22px;
-     font-family: $fontMain;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.31;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    color: #d41443;
-  }
-  @media screen and (min-width: 1200px) {
-    background: #ffffff;
-    border-radius: 22px;
-     font-family: $fontMain;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.31;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    color: #d41443;
-    margin-left: 110px;
-  }
-}
-.header__but:focus,
-.header__but:hover {
-  background: #ecebeb;
-}
-.header__svg-but {
-  stroke: #d41443;
-  fill: none;
-  width: 8px;
-  height: 16px;
-  margin-left: 12px;
-}
-.hero{
-  background: #ffb8ca;
-}
 .hero__span {
   position: relative;
-  padding-left: 20px;
 }
 .hero__tittle {
   margin-top: 0;
-  @media screen and (min-width: 480px) {
-    padding-top: 137px;
-  }
-  @media screen and (min-width: 768px) {
-    padding-top: 15px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-left: 115px;
-    padding-top: 84px;
-  }
 }
 .hero__one {
   color: #ffffff;
@@ -198,7 +193,7 @@
     text-transform: uppercase;
     color: #ffffff;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-family: $fontAccent;
     font-style: normal;
     font-weight: normal;
@@ -233,7 +228,7 @@
     text-transform: uppercase;
     color: #d41443;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-family: $fontAccent;
     font-style: normal;
     font-weight: normal;
@@ -261,7 +256,7 @@
     margin-left: 0;
     margin-top: 20px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-left: 115px;
     margin-top: 25px;
     margin-bottom: 0;
@@ -299,7 +294,7 @@
     font-size: 8px;
     line-height: 1.25;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 104px;
     height: 40px;
     font-size: 14px;
@@ -343,7 +338,7 @@
     width: 82px;
     height: 24px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 14px;
     line-height: 1.28;
     width: 138px;
@@ -360,7 +355,7 @@
   }
   @media screen and (min-width: 768px) {
     width: 114px;
-     font-family: $fontMain;
+    font-family: $fontMain;
     font-style: normal;
     font-weight: normal;
     font-size: 8px;
@@ -371,9 +366,9 @@
     display: block;
     position: absolute;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 200px;
-     font-family: $fontMain;
+    font-family: $fontMain;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -396,17 +391,18 @@
     padding-bottom: 28px;
     padding-top: 19px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: block;
     width: 188px;
     margin-left: 77px;
     padding-bottom: 50px;
   }
 }
-.back {
-  right: -65px;
+.hero__background-round {
   position: absolute;
+
   bottom: 75px;
+  right: -65px;
   @media screen and (min-width: 480px) {
     width: 346px;
     height: 344px;
@@ -417,14 +413,14 @@
     right: 150px;
     bottom: 40px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 538px;
     height: 538px;
-    right: 137px;
-    bottom: 46px;
+    right: 267px;
+    bottom: 75px;
   }
 }
-.ice {
+.hero__image-ice {
   position: absolute;
   width: 171px;
   height: 410px;
@@ -442,7 +438,7 @@
     left: 378px;
     top: -10px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 236px;
     height: 557px;
     left: 694px;
@@ -462,7 +458,7 @@
     right: 34px;
     bottom: 0;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 293px;
     height: 232px;
     display: block;
@@ -479,7 +475,6 @@
     width: 18px;
     height: 18px;
     display: flex;
-    outline: none;
     border-radius: 50%;
     border-color: #ffffff;
     align-items: center;
@@ -488,23 +483,15 @@
     bottom: 34px;
     left: 154px;
   }
-  @media screen and (min-width: 1200px) {
-    background: #ffffff;
+  @media screen and (min-width: 1280px) {
     width: 26px;
     height: 26px;
-    display: flex;
-    outline: none;
-    border-radius: 50%;
-    border-color: #ffffff;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
     bottom: 56px;
     left: 295px;
   }
 }
 .hero__button-right:focus,
-.hero__button-right:hover{
+.hero__button-right:hover {
   background: #ecebeb;
 }
 .right-svg {
@@ -515,7 +502,7 @@
     height: 10px;
     fill: #d41443;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 10px;
     height: 10px;
     fill: #d41443;
@@ -530,7 +517,7 @@
     right: 44px;
     top: 96px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: flex;
     flex-direction: column;
     right: 115px;
@@ -552,7 +539,7 @@
     z-index: 20;
     position: relative;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 46px;
     line-height: 1.2;
     z-index: 20;
@@ -570,7 +557,7 @@
     left: 34px;
     z-index: -1;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     content: '';
     border-radius: 50%;
     height: 30px;
@@ -582,7 +569,7 @@
   }
 }
 .check__two {
-   font-family: $fontMain;
+  font-family: $fontMain;
   font-style: normal;
   font-weight: normal;
   text-align: right;
@@ -591,7 +578,7 @@
     font-size: 8px;
     line-height: 1.25;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 14px;
     line-height: 1.28;
   }
